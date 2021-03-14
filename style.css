@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "harmond";
+  src: url("./Harmond-SemiBoldCondensed.otf") format("OpenType");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "harmond", serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100vh;
+  /* border: 10px solid #161616; */
+  overscroll-behavior: none;
+  background: url(./images/noise.gif);
+}
+
+h1 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  font-size: 5rem;
+  letter-spacing: 5px;
+}
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 180vw;
+  height: 100%;
+  background-color: #f0f0f0f3;
+  border: 10px solid #161616;
+  will-change: transform;
+}
+
+.slider-inner-one {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: black; */
+  will-change: transform;
+}
+
+.slider-inner-two {
+  position: absolute;
+  /* background-color: red; */
+  left: 40vh;
+  top: 40vh;
+  width: 120%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  will-change: transform;
+}
+
+svg {
+  /* background-color: red */
+  width: 400px;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  will-change: transform;
+  transition: all 0.5s ease-out;
+}
+
+svg.active {
+  opacity: 1;
+  /* transition: 0.2s; */
+}

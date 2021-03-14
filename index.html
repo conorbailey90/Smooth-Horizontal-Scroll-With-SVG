@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted
+    </title>
+</head>
+<body>
+
+    <h1>HAUNTED</h1>
+
+    <main>
+        <div class="slider-main">
+            <div class="slider-inner-one">
+                <svg viewBox="0 0 100 100">
+                    <filter id="filter1">
+                        <feTurbulence type="turbulence" baseFrequency="0.07 0.06" numOctaves="5" seed="8" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" />
+                    </filter>
+                
+                    <image xlink:href="./images/1.jpeg" x="0%" y="0%" width="100%" height="100%" filter="url(#filter1)"></image>
+                </svg>
+
+                <svg viewBox="0 0 100 100">
+                    <filter id="filter2">
+                        <feTurbulence type="turbulence" baseFrequency="0.3 0.0096" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+                    </filter>
+                
+                    <image xlink:href="./images/2.jpeg" x="0" y="0" width="100" height="100" filter="url(#filter2)"></image>
+                </svg>
+
+                <svg viewBox="0 0 100 100">
+                    <filter id="filter3">
+                        <feTurbulence type="turbulence" baseFrequency="0.8 0.02" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+                    </filter>
+                
+                    <image xlink:href="./images/3.jpeg" x="0" y="0" width="100" height="100" filter="url(#filter3)"></image>
+                </svg>
+            </div>
+            <div class="slider-inner-two">
+                <svg viewBox="0 0 100 100">
+                    <filter id="filter4">
+                        <feTurbulence type="turbulence" baseFrequency="0.8 0.009" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+                    </filter>
+                
+                    <image xlink:href="./images/4.jpeg" x="0" y="0" width="100" height="100" filter="url(#filter4)"></image>
+                </svg>
+
+                <svg viewBox="0 0 100 80">
+                    <filter id="filter5">
+                        <feTurbulence type="turbulence" baseFrequency="0.08 0.002" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+                    </filter>
+                
+                    <image xlink:href="./images/5.jpeg" x="0" y="-10" width="100" height="100" filter="url(#filter5)"></image>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
